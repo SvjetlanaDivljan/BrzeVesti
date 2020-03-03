@@ -37,6 +37,13 @@ public class Main {
         
         System.out.println(driver.getTitle());
         
+        WebElement authenticationLinks = driver.findElement(By.className("dropdown-toggle"));
+        authenticationLinks.click();
+        
+        WebElement logoutLink = driver.findElement(By.linkText("Logout"));
+        logoutLink.click();
+        System.out.println(driver.getTitle());
+        
         
         
         
